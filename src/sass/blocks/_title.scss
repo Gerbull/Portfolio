@@ -1,0 +1,11 @@
+.title {
+    font-weight: 900;
+    font-style: italic;
+    &_fz96 {
+        font-size: 96px;
+        line-height: 96px;
+    }
+    &_fz48 {
+        font-size: 48px;
+    }
+}

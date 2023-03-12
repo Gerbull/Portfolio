@@ -1,0 +1,96 @@
+@import 'libs/bootstrap-reboot.min';
+// @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,700;1,800;1,1000&display=swap');
+
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('../fonts/SofiaSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/SofiaSans-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('../fonts/SofiaSans-Bold.woff2') format('woff2'),
+        url('../fonts/SofiaSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('../fonts/SofiaSans-BlackItalic.woff2') format('woff2'),
+        url('../fonts/SofiaSans-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('../fonts/SofiaSans-Black.woff2') format('woff2'),
+        url('../fonts/SofiaSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('../fonts/SofiaSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/SofiaSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('../fonts/SofiaSans-Regular.woff2') format('woff2'),
+        url('../fonts/SofiaSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('../fonts/SofiaSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/SofiaSans-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shantell Sans';
+    src: url('../fonts/ShantellSans-Regular.woff2') format('woff2'),
+        url('../fonts/ShantellSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Sofia Sans', sans-serif;
+    color: white;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/subtitle';
+@import 'blocks/buttons';
+@import 'blocks/sidepanel';

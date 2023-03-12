@@ -1,0 +1,14 @@
+@mixin before_triangle {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -4px;
+        left: 0;
+        z-index: 0;
+        border-top: 15px solid transparent;
+        border-left: 25px solid $main-color;
+        border-bottom: 15px solid transparent;
+    }
+}

@@ -1,14 +1,40 @@
-@mixin before_triangle {
+@mixin before_triangle_right {
     &:before {
         content: '';
         position: absolute;
         width: 0;
         height: 0;
-        top: -4px;
-        left: 0;
+        top: 5px;
+        left: 0px;
         z-index: 0;
-        border-top: 15px solid transparent;
-        border-left: 25px solid $main-color;
-        border-bottom: 15px solid transparent;
+        border-top: 19px solid rgba(0,0,0,0);
+        border-bottom: 19px solid rgba(0,0,0,0);
+        border-left: 34px solid $second_color;
+        }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 11px;
+        left: 4px;
+        z-index: 0;
+        border-top: 12px solid rgba(0,0,0,0);
+        border-bottom: 12px solid rgba(0,0,0,0);
+        border-left: 22px solid $bg-dark;
+        }
     }
-}
+
+@mixin under_triangle {
+    &:before {
+        content: '';
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        border-bottom: 19px solid rgba(0,0,0,0);
+        border-top: 19px solid rgba(0,0,0,0);
+        border-left: 34px solid $main_color;
+        z-index: -1;
+        }
+    }

@@ -1,11 +1,20 @@
 .title {
-    font-weight: 900;
-    font-style: italic;
+    font-weight: 700;
     &_fz96 {
+        font-weight: 900;
         font-size: 96px;
         line-height: 96px;
     }
-    &_fz48 {
-        font-size: 48px;
+    &_fz20 {
+        font-size: 20px;
+    }
+    &_fz16 {
+        font-size: 16px;
+    }
+    &__section-title {
+        position: relative;
+        padding-left: 45px;
+        padding-top: 9px;
+        @include before_triangle_right;
     }
 }

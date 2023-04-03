@@ -1,0 +1,79 @@
+.tools {
+    padding-top: 120px;
+    background-color: $bg-dark;
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-auto-rows: 270px;
+        gap: 13px;
+    }
+    &__item {
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid white;
+        background: linear-gradient(to right, $bg-dark, #0a2831);           
+        &-logo {
+            height: 65px;
+            width: 160px;
+            display: flex;
+            justify-content: flex-start;  
+            img {
+                display: block;
+                max-width: 100%;
+            }
+        }
+        .title {
+            margin-top: 20px;
+        }
+        &-text {
+            margin-top: 17px;
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+
+    &__skills-wrapper {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-auto-rows: 60px;
+        column-gap: 45px;
+        row-gap: 45px;
+    }
+    &__skills-item {
+        position: relative;
+        .title {
+            margin-left: 13px;
+            position: relative;
+            z-index: 1;
+            @include under_triangle;
+            &:before {
+                left: -13px;
+                top: 12px;
+            }
+        }
+        &-percent {
+            position: absolute;
+            font-weight: 500;
+            font-size: 16px;
+            right: 0px;
+            top: 0px;
+        }
+        &-bar {
+            width: 350px;
+            height: 14px;
+            background: $main-color-dark-bar;
+            border-radius: 4px;
+            position: absolute;
+            bottom: 0;
+            span {
+                display: block;
+                height: 100%;
+                background-color: $main-color;
+                border-radius: 4px;
+            }
+        }
+    }
+}

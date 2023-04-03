@@ -1,0 +1,75 @@
+.experience {
+    padding-top: 120px;
+    background-color: $bg-dark;
+    &__wrapper {
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        column-gap: 100px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 30px;
+            &:before {
+                content: '';
+                left: -30px;
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                border-left: 12px solid rgba(0,0,0,0);
+                border-right: 12px solid rgba(0,0,0,0);
+                border-top: 20px solid $main_color;
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 14px);
+                    top: -14px;
+                    left: -18px;
+                    background-color: white;
+                }
+            }
+        }
+    }
+    &__item {
+        &-head {
+            position: relative;
+            padding: 45px 0 0 90px;
+        }
+            h4 {
+                margin-bottom: 0;
+            }
+            &-icon {
+                position: absolute;
+                left: 40px;
+                top: 55px;
+                z-index: 10;
+                @include under_triangle
+            }
+            &-degree {
+                font-size: 12px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 48px;
+                height: 1px;
+                top: 68px;
+                left: -18px;
+                background-color: white;
+            }
+        &-text {
+            margin-top: 14px;
+            padding-left: 30px;
+            font-size: 13px;
+            line-height: 16px;  
+        }
+    }
+}
